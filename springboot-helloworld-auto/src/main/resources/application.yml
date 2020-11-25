@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 1800
+  tomcat:
+    threads:
+      max: 500
+    uri-encoding: UTF-8   
+    

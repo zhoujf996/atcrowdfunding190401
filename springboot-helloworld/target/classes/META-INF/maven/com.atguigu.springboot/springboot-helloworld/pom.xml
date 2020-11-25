@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.atguigu.springboot</groupId>
+	<artifactId>springboot-helloworld</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>springboot-helloworld</name>
+
+	<description>第一个springboot工程</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+	</parent>
+	
+	<properties>
+		<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+	</properties>
+	
+	<dependencies>
+		<!-- starter场景启动器。Springboot框架提供了很多starter模块。 -->
+		<!-- web模块：引用SpringMVC和tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
